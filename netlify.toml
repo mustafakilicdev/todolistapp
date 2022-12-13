@@ -1,22 +1,23 @@
 [functions]
   node_bundler = "esbuild"
   directory = "functions/"
-  included_files = ["./db/**.json"]
+  included_files = ["db/**.json"]
+ 
+
 
 [dev]
   port = 3000
   publish = "dist"
 
-# [[redirects]]
+#   [[redirects]]
 #   from = "/api/todos"
 #   to = "/.netlify/functions/todos"
 #   status = 200
 
-# [[redirects]]
+#   [[redirects]]
 #   from = "/"
 #   to = "/index.html"
 #   status = 200
-
 
 
   #  [[redirects]]
@@ -28,8 +29,3 @@
   # from = "/todolist.html"
   # to = "/todolist.html"
   # status = 200
-
-
-
-
-
